@@ -11,7 +11,7 @@
 ## Media
 > **Demonstração**
   <p align="center">
-      <img windth="460" src="https://github.com/cenfv/projeto-dispositivos-moveis/blob/main/HorariosAtividadesAcademicas/media/gif.gif?raw=true">
+      <img width="460" height="720" src="https://github.com/cenfv/projeto-dispositivos-moveis/blob/main/HorariosAtividadesAcademicas/media/gif.gif?raw=true">
   </p>
   
 ## Tecnologias utilizadas
