@@ -1,0 +1,152 @@
+<resources>
+
+
+    <string name="app_name">Control of Schedules and Academic Activities</string>
+    <string name="entre_codigo_disciplina">Enter the course code</string>
+    <string name="salvar_disciplina">Save discipline</string>
+    <string name="limpar_disciplina">Clear</string>
+    <string name="nome_disciplina">Enter the name of the course</string>
+    <string name="todas_notificacoes">All notifications</string>
+    <string name="mais_importantes_notificacoes">Only those with the highest priority</string>
+    <string name="nao_receber_notificacoes">Do not receive notifications</string>
+    <string name="envio_notificacoes">Sending notifications</string>
+    <string name="somente_horario_aula">Only class hours</string>
+    <string name="somente_tarefas">Only job notifications</string>
+    <string name="ativar_alarme">Enable alarm for this course</string>
+    <string name="ativar_alarmes">Activate alarm</string>
+    <string name="desativar_alarmes">Desativar alarme</string>
+    <string name="alarme_ligado">Alarm On</string>
+    <string name="alarme_desligado">Alarm Off</string>
+    <string name="nenhum_alarme_selecionado">No alarms were selected</string>
+    <string name="foi_selecionado">Was selected</string>
+    <string name="horarios_aula">Select class times (Coming soon)</string>
+    <string name="feedback_atividades">FeedBack of activities</string>
+    <string name="ligado">Turned on</string>
+    <string name="desligado">Turned off</string>
+    <string name="nome_professor">Enter the teacher\'s name</string>
+    <string name="nome_curso">Enter your undergraduate course name</string>
+    <string name="nenhum_feedback">No feeback value was selected</string>
+    <string name="diariamente">Daily</string>
+    <string name="semanalmente">Weekly</string>
+    <string name="selecione_campo_estudo">Select the field of study (more than one if necessary)</string>
+    <string name="ciencias_biologicas">Biological Sciences</string>
+    <string name="ciencias_contabeis">Accounting sciences</string>
+    <string name="ciencias_exatas">Exact Sciences</string>
+    <string name="ciencias_natureza">Natural Sciences</string>
+    <string name="ciencias_sociais">Social Sciences</string>
+    <string name="nome_da_disciplina">Course Name:</string>
+    <string name="codigo_da_disciplina">Course code:</string>
+    <string name="nome_do_professor">"Teacher's name:"</string>
+    <string name="nome_do_curso">Course name:</string>
+    <string name="error_msg">Please fill in all the values ​​correctly!</string>
+    <string name="alarme_selecionado">Selected Alarm:</string>
+    <string name="campos_estudo_selecionados">Selected fields of study:</string>
+    <string name="notificacao_selecionada">Selected notification:</string>
+    <string name="dispositivos_moveis" translatable="false">IF69S - Programação Para Dispositivos Móveis</string>
+    <string name="projeto_software" translatable="false">EC37D - Gerenciamento De Projeto De Software</string>
+    <string name="qualidade_software" translatable="false">IF64G - Qualidade De Software</string>
+    <string name="sistemas_operacionais" translatable="false">EC36C - Sistemas Operacionais</string>
+    <string name="arquitetura_software" translatable="false">IF67K - Arquitetura de Software</string>
+    <string name="programacao_web1" translatable="false">IF66H - Programação web 1</string>
+    <string name="oficina_integracao2" translatable="false">IF66K - Oficina de integração 2</string>
+    <string name="gerenciamento_projeto_software" translatable="false">SO36A - Gerenciamento de Projeto de Software</string>
+    <string name="gereencia_configuracao" translatable="false">SO36B - Gerência de Configuração</string>
+    <string name="teoria_computacao" translatable="false">IF67K - Teoria da computação</string>
+    <string name="causas_fracasso" translatable="false">Causas de fracassos e sucessos</string>
+    <string name="listagem_itens" translatable="false">List of items</string>
+    <string name="avaliacao_iso_9126" translatable="false">Avaliar os modelos seguindo a iso 9126</string>
+    <string name="historia_sistemas_operacionais" translatable="false">A história dos sistemas operacionais</string>
+    <string name="introducao_arquitetura" translatable="false">Introdução a arquitetura de software</string>
+    <string name="introducao_framworks" translatable="false">Introdução aos frameworks de desenvolvimento web</string>
+    <string name="definir_tema" translatable="false">Definir o tema para o projeto</string>
+    <string name="pontos_funcao" translatable="false">Pontos por função - ALI</string>
+    <string name="alfabeto_strings" translatable="false">Alfabeto, Strings, e Linguagens</string>
+    <string name="definir_grupos" translatable="false">Definir os grupos e projeto inicial</string>
+    <string name="crie_nova_activity" translatable="false">Crie uma nova Activity que listará itens, estes serão objetos de um tipo de Entidade relacionada ao Tema do Projeto.</string>
+    <string name="fazer_uma_pesquisa_chaos" translatable="false">Fazer uma pesquisa sobre o tema, buscando como fonte principal o Relatório Chaos (Chaos Report) fornecido pelo The Standish Group.</string>
+    <string name="avaliar_software" translatable="false">Avaliar o software seguindo as definições da ISO IEC 9126</string>
+    <string name="realizar_pesquisa_so" translatable="false">Realizar uma pesquisa sobre sistemas operacionais e sua história</string>
+    <string name="realizar_pesquisa_as" translatable="false">Relizar uma pesquisa sobre a arquitetura de software nos dias atuais</string>
+    <string name="fazer_resumo_frameworks" translatable="false">Fazer um breve resumo dos frameworks presentes no mercado, levantando suas vantagens e desvantages</string>
+    <string name="definir_tema_projeto" translatable="false">Definir um tema para o projeto proposto</string>
+    <string name="introducao_analise" translatable="false">Introdução a análise de pontos de função</string>
+    <string name="definir_grupo" translatable="false">Definir um grupo de até 5 pessoas e escolher o tema para o projeto</string>
+    <string name="introducao_teoria" translatable="false">Introdução a Teoria da computação</string>
+    <string name="nome">Name</string>
+    <string name="possui_carro">Has Car</string>
+    <string name="aluno">Student</string>
+    <string name="professor">Teacher</string>
+    <string name="enviar">Submit</string>
+    <string name="voltar">Back</string>
+    <string name="dados_cadastrados">Registered Data</string>
+    <string name="sim">Yes</string>
+    <string name="nao">No</string>
+    <string name="nao_cadastrado">Not registered</string>
+    <string name="nenhum_tipo_escolhido">No type chosen</string>
+    <string name="nota">note:</string>
+    <string name="sem_nota">No rating</string>
+    <string name="string_limpas">All fields were cleared, radioButton and Checkbox cleared</string>
+    <string name="nome_aluno" translatable="false">Carlos Eduardo Nogueira de Freitas Veiga</string>
+    <string name="curso_aluno">Bachelor of Software Engineering</string>
+    <string name="email_aluno" translatable="false">carlos.251099@alunos.utfpr.edu.br</string>
+    <string name="objetivo_app">This application aims to help organize the schedules and activities of students, especially in the face of a pandemic, avoiding the use of agendas and other similar tools.</string>
+    <string name="utfpr_nome">"Feradal Technological University of Paraná<br />Campus Cornélio Procópio "</string>
+    <string name="disciplinas">Schedules:</string>
+    <string name="salvar">Save</string>
+    <string name="adicionar">Add</string>
+    <string name="alterar">Alter</string>
+    <string name="excluir">Delete</string>
+    <string name="cancelar">Cancel</string>
+    <string name="limpar">Clear</string>
+    <string name="alterar_horario">Change Schedule</string>
+    <string name="novo_horario">New Schedule</string>
+    <string name="limpar_valores">All entered values ​​have been cleared</string>
+    <string name="nova_disciplina">New course</string>
+    <string name="castrar_horarios">Register Schedules</string>
+    <string name="cadastrar_horario">Registration of Schedules</string>
+    <string name="formato12horas">12 hour format</string>
+    <string name="formato24horas">24 hour format</string>
+    <string name="cadastrar_horario_para_btn">Register Schedules</string>
+    <string name="horario_fim_maior">The end of class time must be longer than the beginning</string>
+    <string name="preencha_corretamente">Please fill in all the values ​​correctly</string>
+    <string name="entre_horario_inicio">Enter class start time</string>
+    <string name="entre_horario_fim">Enter class end time</string>
+    <string name="inicio_aula">Class start time</string>
+    <string name="fim_aula">Class end time</string>
+    <string name="time_registration">Schedule registration</string>
+    <string name="cancelar_btn">Cancel</string>
+    <string name="ok_btn">Add</string>
+    <string name="horarios_de_aula">Class schedules:</string>
+    <string name="horario_cadastrado_sucesso">Schedule successfully registered!</string>
+    <string name="selecione_um_dia_semana">Please, select a day of the week</string>
+    <string name="sobre">About</string>
+    <string name="disciplina">Courses</string>
+    <string name="selecione_disciplina">Select discipline</string>
+    <string name="titulo_atividade">Activity title</string>
+    <string name="descricao_atividade">Activity description</string>
+    <string name="data_entrega">Delivery date</string>
+    <string name="menu_disciplinas">Courses</string>
+    <string name="title_atividades">Activities</string>
+    <string name="cadastro_data">Register Date</string>
+    <string name="cadastrar_horario_btn">Register schedule</string>
+    <string name="entre_horario_entrega">Enter Delivery Time</string>
+    <string name="preencha_titulo">Please fill in the title field!</string>
+    <string name="preencha_descricao">Please fill in the description field!</string>
+    <string name="preencha_datra">Please fill in the delivery date!</string>
+    <string name="preencha_hora">Please fill in the delivery time!</string>
+    <string name="campos_limpos">All fields, values ​​were cleared and spinner reset!</string>
+    <string name="disciplina_utilizada">The discipline you are trying to delete is being used by an activity!</string>
+    <string name="cadastre_disciplina">Please register at least 1 course to continue</string>
+    <string name="atividade_cadastrada">Activity registered successfully!</string>
+    <string name="alterar_disciplina">Change course</string>
+    <string name="disciplina_removida">Course removed successfully!</string>
+    <string name="remover_disciplina">Do you really want to delete the course</string>
+    <string name="atividade_removida">Activity removed successfully!</string>
+    <string name="apagar_atividade">Do you really want to delete the activity</string>
+    <string name="alterar_atividade">Change Activity</string>
+    <string name="nova_atividade">New Activity</string>
+    <string name="horario_entrega">Delivery time</string>
+    <string name="confirm">Confirm</string>
+    <string name="excluir_horario">Do you want to delete the schedule?</string>
+    <string name="horario_removido">Schedule removed successfully!</string>
+</resources>

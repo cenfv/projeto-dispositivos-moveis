@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".HorarioFragment">
+
+    <com.dpro.widgets.WeekdaysPicker
+        android:id="@+id/weekdays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:highlight_color="#03A9F4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sunday_first_day="false"
+        app:text_unselected_color="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/editTextInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:enabled="true"
+        android:focusable="false"
+        android:fontFamily="@font/roboto"
+        android:inputType="textPersonName"
+        android:paddingLeft="4dp"
+        android:paddingTop="2dp"
+        android:text="hh:mm"
+        android:textColor="#878787"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imgRelogioInicio"
+
+        app:layout_constraintTop_toBottomOf="@+id/textViewInicio" />
+
+    <View
+        android:id="@+id/containerInicio"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weekdays" />
+
+    <TextView
+        android:id="@+id/textViewInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/inicio_aula"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imgRelogioInicio"
+        app:layout_constraintTop_toTopOf="@+id/containerInicio" />
+
+    <ImageButton
+        android:id="@+id/imgRelogioInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editTextInicio"
+        app:layout_constraintStart_toStartOf="@+id/containerInicio"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInicio"
+        app:srcCompat="@drawable/ic_baseline_access_time_24"
+        tools:ignore="VectorDrawableCompat"
+        tools:srcCompat="@drawable/ic_baseline_access_time_24" />
+
+    <View
+        android:id="@+id/containerFim"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerInicio" />
+
+    <TextView
+        android:id="@+id/textViewFim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/fim_aula"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imgRelogioFim"
+        app:layout_constraintTop_toTopOf="@+id/containerFim" />
+
+    <ImageButton
+        android:id="@+id/imgRelogioFim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editTextFim"
+        app:layout_constraintStart_toStartOf="@+id/containerFim"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFim"
+        app:srcCompat="@drawable/ic_baseline_access_time_24"
+        tools:ignore="VectorDrawableCompat"
+        tools:srcCompat="@drawable/ic_baseline_access_time_24" />
+
+    <EditText
+        android:id="@+id/editTextFim"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:enabled="true"
+        android:focusable="false"
+        android:fontFamily="@font/roboto"
+        android:inputType="textPersonName"
+        android:paddingLeft="4dp"
+        android:paddingTop="2dp"
+        android:text="hh:mm"
+        android:textColor="#878787"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imgRelogioFim"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFim" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

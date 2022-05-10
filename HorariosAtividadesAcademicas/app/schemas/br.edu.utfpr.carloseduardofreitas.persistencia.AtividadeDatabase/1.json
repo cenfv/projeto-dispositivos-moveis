@@ -1,0 +1,220 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "bb736a7e4a7bfefdbeb0fb2efdbb2371",
+    "entities": [
+      {
+        "tableName": "disciplina",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `cod_disciplina` TEXT NOT NULL, `nome_disciplina` TEXT NOT NULL, `nome_professor` TEXT NOT NULL, `nome_curso` TEXT NOT NULL, `envio_notificacoes` INTEGER NOT NULL, `ativar_alarme` INTEGER NOT NULL, `campo_estudo` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cod_disciplina",
+            "columnName": "cod_disciplina",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nome_disciplina",
+            "columnName": "nome_disciplina",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nome_professor",
+            "columnName": "nome_professor",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nome_curso",
+            "columnName": "nome_curso",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "envio_notificacoes",
+            "columnName": "envio_notificacoes",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ativar_alarme",
+            "columnName": "ativar_alarme",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "campo_estudo",
+            "columnName": "campo_estudo",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_disciplina_cod_disciplina",
+            "unique": true,
+            "columnNames": [
+              "cod_disciplina"
+            ],
+            "createSql": "CREATE UNIQUE INDEX `index_disciplina_cod_disciplina` ON `${TABLE_NAME}` (`cod_disciplina`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "atividade",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `titulo` TEXT NOT NULL, `descricao` TEXT NOT NULL, `dataEntrega` INTEGER NOT NULL, `horarioEntrega` INTEGER NOT NULL, `disciplinaId` INTEGER NOT NULL, FOREIGN KEY(`disciplinaId`) REFERENCES `disciplina`(`id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "titulo",
+            "columnName": "titulo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "descricao",
+            "columnName": "descricao",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dataEntrega",
+            "columnName": "dataEntrega",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "horarioEntrega",
+            "columnName": "horarioEntrega",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "disciplinaId",
+            "columnName": "disciplinaId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_atividade_disciplinaId",
+            "unique": false,
+            "columnNames": [
+              "disciplinaId"
+            ],
+            "createSql": "CREATE  INDEX `index_atividade_disciplinaId` ON `${TABLE_NAME}` (`disciplinaId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "disciplina",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "disciplinaId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "horario",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `diaDaSemana` TEXT NOT NULL, `horarioIinicio` INTEGER NOT NULL, `horarioFim` INTEGER NOT NULL, `disciplinaId` INTEGER NOT NULL, FOREIGN KEY(`disciplinaId`) REFERENCES `disciplina`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "diaDaSemana",
+            "columnName": "diaDaSemana",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "horarioIinicio",
+            "columnName": "horarioIinicio",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "horarioFim",
+            "columnName": "horarioFim",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "disciplinaId",
+            "columnName": "disciplinaId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_horario_disciplinaId",
+            "unique": false,
+            "columnNames": [
+              "disciplinaId"
+            ],
+            "createSql": "CREATE  INDEX `index_horario_disciplinaId` ON `${TABLE_NAME}` (`disciplinaId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "disciplina",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "disciplinaId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"bb736a7e4a7bfefdbeb0fb2efdbb2371\")"
+    ]
+  }
+}

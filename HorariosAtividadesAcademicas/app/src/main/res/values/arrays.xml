@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="disciplinas">
+        <item>@string/dispositivos_moveis</item>
+        <item>@string/gerenciamento_projeto_software</item>
+        <item>@string/qualidade_software</item>
+        <item>@string/sistemas_operacionais</item>
+        <item>@string/arquitetura_software</item>
+        <item>@string/programacao_web1</item>
+        <item>@string/oficina_integracao2</item>
+        <item>@string/gerenciamento_projeto_software</item>
+        <item>@string/gereencia_configuracao</item>
+        <item>@string/teoria_computacao</item>
+    </string-array>
+    <string-array name="titulos">
+        <item>@string/listagem_itens</item>
+        <item>@string/causas_fracasso</item>
+        <item>@string/avaliacao_iso_9126</item>
+        <item>@string/historia_sistemas_operacionais</item>
+        <item>@string/introducao_arquitetura</item>
+        <item>@string/introducao_framworks</item>
+        <item>@string/definir_tema</item>
+        <item>@string/pontos_funcao</item>
+        <item>@string/definir_grupos</item>
+        <item>@string/alfabeto_strings</item>
+    </string-array>
+    <string-array name="descricoes">
+        <item>@string/crie_nova_activity</item>
+        <item>@string/fazer_uma_pesquisa_chaos</item>
+        <item>@string/avaliacao_iso_9126</item>
+        <item>@string/realizar_pesquisa_so</item>
+        <item>@string/realizar_pesquisa_as</item>
+        <item>@string/fazer_resumo_frameworks</item>
+        <item>@string/definir_tema_projeto</item>
+        <item>@string/introducao_analise</item>
+        <item>@string/definir_grupo</item>
+        <item>@string/introducao_teoria</item>
+    </string-array>
+    <string-array name="datas">
+        <item>"10/03/2021"</item>
+        <item>"09/03/2021"</item>
+        <item>"11/03/2021"</item>
+        <item>"08/03/2021"</item>
+        <item>"08/03/2021"</item>
+        <item>"13/03/2021"</item>
+        <item>"14/03/2021"</item>
+        <item>"09/03/2021"</item>
+        <item>"10/03/2021"</item>
+        <item>"16/03/2021"</item>
+    </string-array>
+
+</resources>
